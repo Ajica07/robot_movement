@@ -6,19 +6,22 @@ To use the program, first create robots by assigning them a unique ID. By defaul
 
 The program includes unit tests to check robot movements, boundary conditions, and robot collisions. To run the program, ensure Python 3 is installed on your system and execute the script using the following command in your terminal:
 
-python robot_movement.py
+# python robot_movement.py
 
 To Run the Program:
+
 Use the code in robot_movement.py to simulate the robots. Here's an example of how to create robots and move them:
 
-terrain = Terrain(5, 5)  # Create a 5x5 grid
-terrain.add_robot(1)     # Add robot with ID 1
-terrain.add_robot(2)     # Add robot with ID 2
+# terrain = Terrain(5, 5)  # Create a 5x5 grid
 
-# Move robot 1 (2 steps East, 2 steps South) 
+# terrain.add_robot(1)     # Add robot with ID 1
+
+# terrain.add_robot(2)     # Add robot with ID 2
+
+**Move robot 1 (2 steps East, 2 steps South)**
 terrain.move_robot(1, ["E2", "S2"])
 
-# Move robot 2 (1 step South, 1 step East)
+**Move robot 2 (1 step South, 1 step East)**
 terrain.move_robot(2, ["S1", "E1"])
 
 # Get robot positions
